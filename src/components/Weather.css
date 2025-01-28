@@ -3,6 +3,7 @@
     padding: 50px;
     border-radius: 10px;
     background-image: linear-gradient(55deg, #7d6df2, #07a8ff);
+    opacity: 0.9;
     flex-direction: column;
     align-items: center;
     display: flex;

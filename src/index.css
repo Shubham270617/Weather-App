@@ -14,7 +14,13 @@ display: grid;
 }
 
 body{
-  background-color: rgba(172, 214, 193, 0.986);
+  background-image: url('./assets/w.jpeg');
+  background-size: cover;
+  background-position: 0px 0px;
+  animation: MainBack 25s infinite alternate linear;
 }
-
-
+@keyframes MainBack {
+   from{
+       background-position: 0;
+   }
+ }
