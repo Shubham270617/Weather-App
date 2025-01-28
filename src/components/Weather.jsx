@@ -99,7 +99,7 @@ const Weather = () => {
             <div className="col">
               <img src={wind_icon} alt="" />
               <div>
-                <p>{weatherData.windSpeed}</p>
+                <p>{weatherData.windSpeed}Km/hr</p>
                 <span>Wind Speed</span>
               </div>
             </div>
