@@ -79,3 +79,48 @@
     width: 30px;
     margin-top: 15px;
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .weather {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .weather .temp {
+      font-size: 2rem;
+    }
+  
+    .weather .weather-data {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .weather .weather-data .col {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .weather {
+      padding: 10px;
+    }
+  
+    .weather .search-bar input {
+      width: 65%;
+    }
+  
+    .weather .search-bar img {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .weather img.weather-icon {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .weather .temp {
+      font-size: 1.8rem;
+    }
+  }
