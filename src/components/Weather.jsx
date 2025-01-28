@@ -63,9 +63,10 @@ const Weather = () => {
     }
   };
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    alert("you have searched for - " + value);
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      search(inputRef.current.value);
+    }
   };
 
   useEffect(() => {
@@ -75,10 +76,9 @@ const Weather = () => {
   return (
     <div className="weather">
       <div className="search-bar ">
-        <input ref={inputRef} type="text" placeholder="Search..." />
+        <input ref={inputRef} type="text" placeholder="Search..." onKeyDown={handleKeyDown} />
         <img
-          onClick={() => search(inputRef.current.value)}
-          onSubmit={handleSubmit}      
+          onClick={() => search(inputRef.current.value)}     
           src={search_icon}
           alt=""
         />
